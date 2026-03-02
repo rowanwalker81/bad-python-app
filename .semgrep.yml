@@ -1,0 +1,2 @@
+rules:
+  - .semgrep/rules.yml
