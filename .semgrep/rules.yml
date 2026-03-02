@@ -1,0 +1,13 @@
+rules:
+  - id: python-manual-sql-fstring
+    pattern: |
+      $QUERY = f"...SELECT ...{$X}..."
+    message: Avoid building SQL queries using f-strings. Use parameterized queries instead.
+    languages: [python]
+    severity: ERROR
+
+  - id: python-os-system-usage
+    pattern: os.system($CMD)
+    message: Use of os.system detected. This may allow command injection if user input is passed.
+    languages: [python]
+    severity: WARNING
