@@ -51,4 +51,7 @@ Host: localhost:5000
 
 Cookie: api_key=myapisecret
 
+
+
+Test commit to trigger Semgrep scan
 ...
